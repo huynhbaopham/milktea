@@ -17,12 +17,13 @@ const Header = ({ siteTitle }) => (
         textDecoration: `none`,
       }}
     >
-      <StaticImage>
-        src="../images/XFTLogo.png" width={150}
+      <StaticImage
+        src="../images/XFTLogo.png"
+        width={150}
         quality={95}
         formats={["auto", "webp", "avif"]}
-        alt="Logo" style={{ marginBottom: `1.45rem` }}
-      </StaticImage>
+        alt="Logo"
+      />
     </Link>
     <div
       style={{
