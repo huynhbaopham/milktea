@@ -10,14 +10,12 @@ import PropTypes from "prop-types"
 
 import Header from "./header"
 import "./layout.css"
-import { GlobalStyle } from "../styles/GlobalStyle"
 
 const Layout = ({ children }) => {
   return (
     <>
       <Header />
       <div>
-        <GlobalStyle />
         <main>{children}</main>
         <footer
           style={{
