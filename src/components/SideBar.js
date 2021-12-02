@@ -10,7 +10,7 @@ const SideBar = ({ isOpen, toggle }) => {
         <StaticImage
           src="../images/Logos/circle-xmark-regular.svg"
           alt="close"
-          height="{2rem}"
+          height={30}
         />
       </Icon>
       <SideBarMenu>
@@ -39,7 +39,7 @@ export default SideBar
 const Icon = styled.div`
   position: absolute;
   top: 1.2rem;
-  right: 1.5rem;
+  right: 2rem;
   background: transparent;
   font-size: 2rem;
   cursor: pointer;

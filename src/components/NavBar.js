@@ -21,7 +21,7 @@ const Navbar = ({ toggle }) => {
             <StaticImage
               src="../images/Logos/bars-solid.svg"
               alt="fabars"
-              height="{1.8rem}"
+              height={24}
             />
           </MobileIcon>
           <NavMenu>
@@ -94,10 +94,9 @@ const MobileIcon = styled.div`
   @media screen and (max-width: 768px) {
     display: block;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 24px;
     transform: translate(-110%, 60%);
-    font-size: 1.8rem;
     cursor: pointer;
     color: #f6ead9;
   }
