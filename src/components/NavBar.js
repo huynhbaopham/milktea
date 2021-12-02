@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 // import scrollTo from "gatsby-plugin-smoothscroll"
 import styled from "styled-components"
 import { FaBars } from "react-icons/fa"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Navbar = ({ toggle }) => {
   return (
@@ -19,7 +20,7 @@ const Navbar = ({ toggle }) => {
             />
           </NavLogo>
           <MobileIcon onClick={toggle}>
-            <FaBars />
+            <FontAwesomeIcon icon="fa-solid fa-bars" />
           </MobileIcon>
           <NavMenu>
             <NavItem>

@@ -8,7 +8,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-smoothscroll`,
-    `react-icons`,
+    `gatsby-plugin-fontawesome-css`,
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
