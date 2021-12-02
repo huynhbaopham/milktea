@@ -3,8 +3,6 @@ import { StaticImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 // import scrollTo from "gatsby-plugin-smoothscroll"
 import styled from "styled-components"
-import { FaBars } from "react-icons/fa"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const Navbar = ({ toggle }) => {
   return (
@@ -20,7 +18,11 @@ const Navbar = ({ toggle }) => {
             />
           </NavLogo>
           <MobileIcon onClick={toggle}>
-            <FontAwesomeIcon icon="fa-solid fa-bars" />
+            <StaticImage
+              src="../images/Logos/bars-solid.svg"
+              alt="fabars"
+              height="{1.8rem}"
+            />
           </MobileIcon>
           <NavMenu>
             <NavItem>

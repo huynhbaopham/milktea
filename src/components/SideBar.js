@@ -1,14 +1,17 @@
+import { StaticImage } from ".gatsby-plugin-image-Z2AFIArj/dist/src"
 import { Link } from "gatsby"
 import React from "react"
-import { FaTimes } from "react-icons/fa"
 import styled from "styled-components"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 const SideBar = ({ isOpen, toggle }) => {
   return (
     <SideBarContainer isOpen={isOpen} onClick={toggle}>
       <Icon onClick={toggle}>
-        <CloseIcon icon="fa-regular fa-circle-xmark" />
+        <StaticImage
+          src="../images/Logos/circle-xmark-regular.svg"
+          alt="close"
+          height="{2rem}"
+        />
       </Icon>
       <SideBarMenu>
         <SideBarLink to="home" onClick={toggle}>
@@ -32,10 +35,6 @@ const SideBar = ({ isOpen, toggle }) => {
 }
 
 export default SideBar
-
-const CloseIcon = styled(FontAwesomeIcon)`
-  color: #252626;
-`
 
 const Icon = styled.div`
   position: absolute;
