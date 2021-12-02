@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 import styled from "styled-components"
 import { FaBars } from "react-icons/fa"
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <>
       <Nav>
@@ -15,10 +15,10 @@ const Navbar = () => {
               to="/"
               src="../images/Logos/LOGOWhite.png"
               alt="XING FU TANG"
-              height={80}
+              height={70}
             />
           </NavLogo>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
@@ -32,7 +32,7 @@ const Navbar = () => {
               <NavLink to="locations">locations</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink to="menu">menu</NavLink>
+              <NavLink to="/menu">menu</NavLink>
             </NavItem>
             {/* <NavItem>
               <NavLink to="order">order</NavLink>
@@ -57,8 +57,10 @@ const Nav = styled.nav`
   justify-content: center;
   align-items: center;
   font-size: 1rem;
-  position: sticky -webkit-sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 10;
 
   @media screen and (max-width: 960px) {
@@ -153,7 +155,7 @@ const NavBtnLink = styled(Link)`
 
   &:hover {
     transition: all 0.2 ease-in-out;
-    background: brown;
+    background: darkkhaki;
     color: #252626;
   }
 `

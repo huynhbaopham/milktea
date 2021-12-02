@@ -12,6 +12,9 @@ const IndexPage = () => (
       <Video autoPlay loop muted>
         <source src={backgroundVideo} type="video/mp4" />
       </Video>
+      <Video autoPlay loop muted>
+        <source src={backgroundVideo} type="video/mp4" />
+      </Video>
     </VideoContainer>
   </Layout>
 )
@@ -20,9 +23,15 @@ export default IndexPage
 
 const VideoContainer = styled.div`
   display: block;
-  overflow: hidden;
+  justify-content: center;
 `
 
 const Video = styled.video`
+  position: relative;
   width: 100%;
+
+  @media screen and (max-width: 768px) {
+    height: 100% !important;
+    overflow-x: hidden;
+  }
 `
